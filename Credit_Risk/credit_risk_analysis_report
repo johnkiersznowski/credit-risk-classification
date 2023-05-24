@@ -1,0 +1,31 @@
+# Model 12 Credit Risk Analysis Report
+
+# Overview
+
+The purpose of this analysis is to evaluate the results of supervised machine learning logistic regression models on credit risk. The lending data included loan information from various lenders, including loan size, interest rate, borrower income, total debt, loan status, and more. The model aimed to predict the loan status of these loans as either healthy or high-risk. This process included importing data, defining target variables, splitting the data, fitting the logistic regression model, making predictions, and evaluating the performance of the model.
+
+# Results
+
+Model 1 (original):
+
+- Balanced accuracy: 0.95
+- Precision for healthy loans: 1.00
+- Precision for high-risk loans: 0.85
+- Recall for healthy loans: 0.99
+- Recall for high-risk loans: 0.91
+
+	- Model 1 preformed very well with a 95% accuracy score identifying healthy vs high-risk loans. The precision 	trailed some with an 85% correctness of positives, but scores were nevertheless compelling.
+
+Model 2 (resampled):
+
+- Balanced accuracy: 0.99
+- Precision for healthy loans: 1.00
+- Precision for high-risk loans: 0.84
+- Recall for healthy loans: 0.99
+- Recall for high-risk loans: 0.99
+
+	- Model 2 certainly benefitted from resampling by increasing the balanced accuracy score 4 percent to 99%. 	Furthermore, the biggest improvement in the change was found in recall for high-risk loans increasing 8 		percent to 99% of true positives.
+
+# Summary
+
+In summary, both logistic regression models performed very well, but the resampled model is recommended in credit risk analysis. A 99% accuracy rate for the resampled model trumps the 95% from the original, and that difference alone is unignorable. For further justification, the significant increase in recall for specifically the high-risk loans is what led to the accuracy increase, and will protect from potentially losing on high-risk lenders.
